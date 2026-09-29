@@ -19,7 +19,7 @@
   :version "1.33.11"
   :depends-on ("md5" "split-sequence" "ironclad" "cl-base64" "uax-15"
                      (:feature (:or :allegro :ccl :clisp :genera
-                                :armedbear :cmucl :lispworks :ecl)
+                                :armedbear :cmucl :lispworks :ecl :dotcl)
                                "usocket")
                      (:feature :sbcl (:require :sb-bsd-sockets)))
   :components
