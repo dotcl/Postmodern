@@ -8,10 +8,10 @@
 ;; Change this to manually turn threading support on or off.
 (eval-when (:compile-toplevel :load-toplevel :execute)
   #+(or allegro armedbear clasp cmu corman (and digitool ccl-5.1)
-        ecl lispworks openmcl sbcl genera)
+        ecl lispworks openmcl sbcl genera dotcl)
   (pushnew :postmodern-thread-safe *features*)
 
-  #+(or allegro clasp clisp ecl lispworks mcl openmcl cmu sbcl armedbear)
+  #+(or allegro clasp clisp ecl lispworks mcl openmcl cmu sbcl armedbear dotcl)
   (pushnew :postmodern-use-mop *features*))
 
 (defsystem "postmodern"
